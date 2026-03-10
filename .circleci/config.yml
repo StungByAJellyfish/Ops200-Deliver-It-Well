@@ -6,12 +6,12 @@ jobs:
       - image: cimg/node:18.11
     steps:
       - checkout
-      - run: 
-        name: Install Dependencies
-        command: npm install
-      - run: 
-        name: Run Tests
-        command: npm test
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - run:
+          name: Run Tests
+          command: npm test
 
 workflows:
   build-and-test:
